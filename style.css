@@ -1,0 +1,279 @@
+/* Importando fuente de google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Roboto:wght@100;400;500&display=swap");
+
+/* Uso de variables para la paleta de colores  */
+:root{
+  --color1: #768fa6;
+  --color2: #fff;
+  --color3: #eee;
+  --color4: #344856;
+  /* dos fuentes de Google Fonts*/
+  --fuente-principal: "Roboto", sans-serif;
+  --fuente-titulo: "Nunito", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.cabecera-cont {
+  background-color: var(--color1);
+}
+
+.cabecera-foot {
+  max-width: 80%;
+  padding: 60px;
+  color: var(--color2); 
+  margin: auto;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: var(--fuente-titulo);
+}
+
+p {
+  font-family: var(--fuente-principal);
+  text-align: justify;
+}
+
+.contenedor-do {
+  display: flex;
+  /* justify-content: space-around; */
+  margin-bottom: 30px;
+}
+
+.columna {
+  margin-top: 50px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.columna div {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+.columna img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para el banner */
+
+.ajustar_banner {
+  width: 100%;
+}
+
+/* Estilos generales aplicados para las secciones */
+
+.contenedor-secc {
+  max-width: 75%;
+  margin: 50px auto;
+  line-height: 1.5;
+}
+
+/* Estilos especificos para la seccion de noticias */
+.head-news {
+  display: flex;
+}
+
+.head-news p {
+  margin: 20px 20px 40px 0;
+}
+
+/* Estilos para la seccion de columna de noticias */
+.news-col {
+  height: 600px;
+  display: flex;
+}
+
+/* sombreado de textos de los titulos de  */
+
+.news-col h1{  
+  text-shadow:  2px 4px 4px rgba(0, 0, 0, 0.3)
+}
+
+/* Estilos para los contenidos de noticias columnas y filas */
+
+.news-col-col1 {
+  display: flex;
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.news-col-col1 p {
+  margin: 20px 20px 40px 0;
+}
+
+.news-col-col1 img {
+  width: 100%;
+  height: 250px;
+}
+
+/* Bordes, sombreado de cajas y sombreado de textos */
+.news-col-row {
+  margin-right: 10px;
+  border: 1px solid var(--color3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+.news-col-col2 {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 20px;
+  border: 1px solid var(--color3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
+}
+
+/* Estilos especificos para la seccion de galeria de imagenes */
+.head-gal {
+  background-color: var(--color1);
+  height: 200px;
+  color: var(--color2);
+}
+
+/* Estilos especificos para la seccion de la imagen fija */
+
+.fija-contador-imagen {
+  background-image: url(./img/fija/fijacontadores.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  background-attachment: fixed;
+  background-color: var(--color1);
+  height: 400px;
+  color: var(--color4);
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+.fija-contador-imagen div {
+  flex-basis: 90%;
+  text-align: center;
+  margin: 15px;
+  font-size: 15px;
+}
+
+.head-gal h1 {
+  font-size: 40px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.head-gal p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sec-gal-esp {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Estilos especificos para la seccion de galeria de imagenes enlaces de navegacion */
+/* estilos para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--color2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sec-gal-esp nav {
+  background-color: rgba(0, 0, 0, 0.353);
+  color: var(--color2);
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 15px 15px;
+}
+
+.sec-gal-img {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 90%;
+  flex-wrap: wrap;  
+}
+
+.sec-gal-img img {
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+/* Sección Nuestros doctores */
+
+.contenedor {
+  margin-top: 60px;
+  margin-left: 95px;
+  margin-right: 95px;
+  font-size: 20px;
+}
+
+.fila {
+  display: flex; /*activar flexbox*/
+  flex-direction: row; /*coloca el contenido de izquierda a derecha*/
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: center;
+}
+.ajustar_ancho {
+  width: 50%;
+  height: auto;
+}
+.doc-cont {
+  height: 400px;
+  background-color: var(--color1);
+  color: var(--color3);
+  display: flex;
+}
+.doc-col {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  line-height: 1.5;
+  padding: 15px;
+}
+.ajustar-img {
+  max-width: 95%;
+  display: block;
+}
+
+.imagen {
+ border-radius: 50%;
+ border: solid 1px var(--color1);
+ box-shadow: -1px 1px 19px 1px var(--color1); 
+  margin: 8.65px;
+}
+
+/* Sección Footer*/
+
+.cont-foot {
+  height: 250px;
+  background-color: var(--color3);
+  display: flex;
+  justify-content: space-between  ;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+/* Estilos para el texto del coyright */
+.foot-text{
+  font-size: 20px; 
+}
+
+/* Estilos para las redes sociales */
+
+.redes-sociales i {
+  margin: 0 10px;
+  font-size: 50px;  
+}
